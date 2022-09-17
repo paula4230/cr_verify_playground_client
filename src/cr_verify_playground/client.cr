@@ -17,8 +17,8 @@ module CrVerifyPlayground
       end
     end
 
-    def post(path : String, body)
-      reset_client.post("v2/Services", JSON.parse(body))
+    def post(path : String, body : String)
+      reset_client.post("v2/Services", body)
     end
 
     def get(path : String)
