@@ -9,7 +9,7 @@ TODO: Write a description here
    ```yaml
    dependencies:
      cr_verify_playground_client:
-       github: your-github-user/cr_verify_playground_client
+       github: paula4230r/cr_verify_playground_client
    ```
 
 2. Run `shards install`
