@@ -12,7 +12,7 @@ module CrVerifyPlayground
       HTTP::Client.new(BASE_URI, port: 443, tls: true).tap do |client|
         client.before_request do |request|
           request.headers["Authorization"] = "Basic #{Base64.urlsafe_encode("#{account_sid}:#{auth_token}")}"
-          request.headers["Content-Type"] = "application/json"
+          request.headers["Content-Type"] = "application/x-www-form-urlencoded"
         end
       end
     end
